@@ -1,0 +1,12 @@
+<p>
+  student works!
+</p>
+<ul>
+  <li *ngFor="let item of studentData"><a [routerLink]="['/profile', item.id]"> {{item.name}} </a> </li>
+  <li><a [routerLink]="['/profile', '']">Someone with no id</a></li>
+</ul>
+
+
+ <!--<li *ngFor="let item of studentData"><a [routerLink]="['/profile', item.id]" (click)="onCheckProfileId(item.id)"> {{item.name}} </a> </li>-->
+
+ <!--<li *ngFor="let item of studentData"><a (click)="onCheckProfileId(item.id)"> {{item.name}} </a> </li>-->
